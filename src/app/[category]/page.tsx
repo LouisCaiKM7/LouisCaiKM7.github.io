@@ -17,19 +17,19 @@ export default async function CategoryPage({ params }: Props) {
           {category.toUpperCase()}
         </h1>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          {category === 'blog' && 'Digital chronicles from the cyber frontier'}
+          {category === 'blog' && 'Digital chronicles from the Louis Cai universe'}
           {category === 'photos' && 'Pixel-perfect moments captured in time'}
           {category === 'videos' && 'Motion pictures from the digital realm'}
           {category === 'projects' && 'Code experiments and technological innovations'}
         </p>
-      </div>
+      </div> 
 
       {/* Files grid with tech cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {files.map((f) => {
           const title = f.replace(".md", "").replace(/-/g, " ");
           return (
-            <Link key={f} href={`/${category}/${f.replace(".md", "")}`} className="group">
+            <Link key={f} href={`/${category}/${f.replace(".md", "")}`} className="group content-link">
               <div className="tech-card p-6 rounded-xl h-full relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
@@ -77,7 +77,7 @@ export default async function CategoryPage({ params }: Props) {
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
-          RETURN TO CYBERVERSE
+          RETURN TO LOUISCAIKM7
         </Link>
       </div>
     </div>

@@ -12,24 +12,14 @@ export default async function Home() {
         <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-purple-500 rounded-full filter blur-3xl opacity-20 animate-pulse animation-delay-2000"></div>
         
         <h1 className="text-8xl font-black font-['Orbitron'] mb-6 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
-          CYBERVERSE
+          LOUISCAIKM7
         </h1>
         <p className="text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Welcome to the digital nexus where technology meets creativity. 
-          <span className="block mt-2 text-cyan-400">Exploring infinite possibilities through code and design.</span>
+          Welcome to the my personal website
+          <span className="block mt-2 text-cyan-400">By LOUIS CAI</span>
         </p>
         
-        <div className="flex justify-center space-x-4 mb-12">
-          <div className="tech-card px-6 py-3 rounded-lg">
-            <span className="text-cyan-400 font-semibold">Next.js 15</span>
-          </div>
-          <div className="tech-card px-6 py-3 rounded-lg">
-            <span className="text-purple-400 font-semibold">React 19</span>
-          </div>
-          <div className="tech-card px-6 py-3 rounded-lg">
-            <span className="text-green-400 font-semibold">TypeScript</span>
-          </div>
-        </div>
+      
       </div>
 
       {/* Categories grid with tech cards */}

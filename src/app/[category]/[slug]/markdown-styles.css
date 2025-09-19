@@ -60,13 +60,23 @@
   margin: 2em 0;
 }
 
+/* Override link colors to stay white */
 .markdown-content a {
-  color: #00ffff;
+  color: #ffffff !important;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s;
 }
 
 .markdown-content a:hover {
+  color: #00ffff !important;
   border-bottom-color: #00ffff;
+}
+
+.markdown-content a:visited {
+  color: #ffffff !important;
+}
+
+.markdown-content a:active {
+  color: #ffffff !important;
 }

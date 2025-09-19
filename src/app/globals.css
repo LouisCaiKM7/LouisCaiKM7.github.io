@@ -17,6 +17,24 @@
   box-sizing: border-box;
 }
 
+/* Override default link colors */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #00ffff;
+}
+
+a:active {
+  color: #ffffff;
+}
+
 body {
   font-family: 'Exo 2', system-ui, sans-serif;
   background: var(--dark-bg);
@@ -149,4 +167,33 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
   border-color: var(--neon-cyan);
+}
+
+/* Specific link styling for navigation */
+nav a {
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffff !important;
+}
+
+nav a:visited {
+  color: #ffffff !important;
+}
+
+/* Link styling for content areas */
+.content-link {
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+.content-link:hover {
+  color: #00ffff !important;
+  text-decoration: none;
+}
+
+.content-link:visited {
+  color: #ffffff !important;
 }

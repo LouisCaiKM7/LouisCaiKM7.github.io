@@ -3,7 +3,7 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "CyberVerse - Technological Universe",
+  title: "LOUISCAIKM7 - Technological Universe",
   description: "Exploring the digital frontier through code, design, and innovation",
 };
 
@@ -21,20 +21,44 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="relative z-10 p-4 glass m-4 animated-border">
           <div className="flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold font-['Orbitron'] neon-text text-cyan-400">
-              CYBERVERSE
+              LOUISCAIKM7
             </Link>
-            <nav className="flex space-x-6">
-              {['Home', 'Blog', 'Photos', 'Videos'].map((item) => (
-                <Link
-                  key={item}
-                  href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                  className="relative px-4 py-2 text-white hover:text-cyan-400 transition-all duration-300 group"
-                >
-                  <span className="relative z-10">{item}</span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-0 group-hover:opacity-20 rounded-lg transition-opacity duration-300"></span>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
-                </Link>
-              ))}
+            <nav className="flex space-x-12"> {/* Increased from space-x-6 to space-x-12 */}
+              <Link
+                href="/"
+                className="relative px-4 py-2 text-white hover:text-cyan-400 transition-all duration-300 group"
+              >
+                <span className="relative z-10">Home &nbsp;&nbsp;</span>
+                <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-0 group-hover:opacity-20 rounded-lg transition-opacity duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+              
+              <Link
+                href="/blog"
+                className="relative px-4 py-2 text-white hover:text-cyan-400 transition-all duration-300 group"
+              >
+                <span className="relative z-10">Blog &nbsp;&nbsp;</span>
+                <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-0 group-hover:opacity-20 rounded-lg transition-opacity duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+              
+              <Link
+                href="/photos"
+                className="relative px-4 py-2 text-white hover:text-cyan-400 transition-all duration-300 group"
+              >
+                <span className="relative z-10">Photos &nbsp;&nbsp;</span>
+                <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-0 group-hover:opacity-20 rounded-lg transition-opacity duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+              
+              <Link
+                href="/videos"
+                className="relative px-4 py-2 text-white hover:text-cyan-400 transition-all duration-300 group"
+              >
+                <span className="relative z-10">Videos</span>
+                <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-0 group-hover:opacity-20 rounded-lg transition-opacity duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
+              </Link>
             </nav>
           </div>
         </header>
@@ -55,7 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="relative z-10 p-6 glass m-4 mt-8 animated-border">
           <div className="text-center">
             <p className="text-cyan-400 font-['Orbitron'] text-sm tracking-wider">
-              © {new Date().getFullYear()} CYBERVERSE // DIGITAL FRONTIERS UNLIMITED
+              © {new Date().getFullYear()} LOUISCAIKM7 // DIGITAL FRONTIERS UNLIMITED
             </p>
             <div className="mt-2 flex justify-center space-x-4">
               <span className="w-2 h-2 bg-cyan-400 rounded-full pulse-neon"></span>
