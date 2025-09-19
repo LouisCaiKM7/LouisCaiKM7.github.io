@@ -63,9 +63,6 @@ export default async function CategoryPage({ params }: Props) {
                   
                   <div className="mt-4 flex items-center text-cyan-400 group-hover:text-white transition-colors duration-300">
                     <span className="text-sm font-semibold">VIEW CONTENT</span>
-                    <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
                   </div>
                 </div>
               </div>
