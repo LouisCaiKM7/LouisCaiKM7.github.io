@@ -2,11 +2,14 @@
   "name": "my-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://LouisCaiKM7.github.io/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "export": "next build --turbopack && next export",
+    "deploy": "npm run export && touch out/.nojekyll && git add out/ -f && git commit -m 'Deploy to GitHub Pages' && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "framer-motion": "^12.23.15",
