@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getFilesInCategory } from "../../lib/content";
+import { getFilesInCategory, getCategories } from "../../lib/content";
 
 type Props = { params: { category: string } };
 
@@ -85,4 +85,12 @@ export default async function CategoryPage({ params }: Props) {
       </div>
     </div>
   );
+}
+
+// Add generateStaticParams for static export
+export async function generateStaticParams() {
+  const categories = await getCategories();
+  return categories.map((category) => ({
+    category,
+  }));
 }
