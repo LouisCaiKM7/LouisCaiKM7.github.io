@@ -2,7 +2,7 @@
   "name": "my-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://louiscaikm7.github.io/",
+  "homepage": "https://louiscaikm7.github.io",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
