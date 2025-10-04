@@ -29,8 +29,6 @@ export default async function PostPage({ params }: Props) {
           </h1>
           <div className="flex items-center justify-center space-x-4 text-gray-400">
             <span>{new Date().toLocaleDateString()}</span>
-            <span>•</span>
-            <span>5 min read</span>
           </div>
         </div>
       </div>
